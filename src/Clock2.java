@@ -6,7 +6,7 @@ public class Clock2 implements Runnable {
 	Thread m_runner=null;//定义一个多线程   
 	Label gr;//定义一个标签表示日期   
 	Label gt;//定义一个标签表示时间 
-	public void clock2(Label r,Label t){ 
+	public Clock2(Label r,Label t){ 
 		gr=r;gt=t;    
 		if(m_runner==null){    
 			m_runner=new Thread(this); 
